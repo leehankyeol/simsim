@@ -1,0 +1,278 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif !important;
+}
+
+div.nav-background {
+  background: #ffcb09;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+div.footer-background {
+  background: #ffcb09;
+  font-size: 0.9em;
+  letter-spacing: -1px;
+  line-height: 25px;
+  margin-top: 30px;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+div.nav {
+  text-align: center;
+  height: 60px;
+}
+
+div.nav img.logo {
+  margin-top: 5px;
+  width: 200px;
+}
+
+div.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul.choices {
+  overflow: hidden;
+}
+
+ul.choices li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 10px 5% 0;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+  width: 26%;
+}
+
+ul.choices li.left {
+  margin-left: 0;
+}
+ul.choices li.right {
+  margin-right: 0;
+}
+
+ul.choices li img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+ul.choices li div.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul.choices li div.overlay span {
+  color: #fff;
+  font-weight: bold;
+  line-height: 150px;
+}
+
+ul.choices li.selected div.overlay {
+  display: block;
+}
+
+ul.choices li div.caption {
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-top: 10px;
+}
+
+h2.title {
+  clear: both;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -4px;
+  margin: 20px 0;
+}
+
+div.subtitle {
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+form {
+  clear: both;
+  text-align: center;
+  margin: 30px 0;
+}
+
+form input {
+  border: solid 2px #99968a;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 54px;
+  text-indent: 10px;
+}
+
+form div.label-wrapper {
+  margin-bottom: 20px;
+}
+
+form button {
+  background-color: #ffcb09;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px 30px;
+  width: 300px;
+}
+
+div.counter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+div.choice {
+  clear: both;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+div.choice-header {
+  float: left;
+  text-align: center;
+  width: 150px;
+}
+
+div.choice-header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+div.choice-header div.caption {
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-top: 10px;
+}
+
+ul.policies {
+  line-height: 150%;
+  list-style-type: disc;
+  padding-left: 185px;
+}
+
+div.button-wrapper {
+  margin: 10px 0;
+  text-align: center;
+}
+
+div.button-wrapper.top {
+  margin-bottom: 30px;
+}
+
+a.button {
+  border: none;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 20px 30px;
+  text-decoration: none;
+  min-width: 300px;
+}
+a.button.go {
+  color: black;
+  font-size: 1.5em;
+  background-color: #ffcb09;
+}
+a.button.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+a.button.twitter {
+  background-color: #00aced;
+  color: white;
+}
+a.button.kakao {
+  background-color: #fcd411;
+  color: #2e2e30;
+}
+a.button.telegram {
+  background-color: #0088cc;
+  color: white;
+}
+a.back {
+  border: 2px solid #666;
+  color: #666;
+}
+
+@media (max-width: 550px) {
+  div.choice-header {
+    float: none;
+    margin: 0 auto 10px;
+  }
+
+  ul.policies {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+}
