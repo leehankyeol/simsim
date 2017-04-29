@@ -252,7 +252,7 @@
       'caption' => '서민 상정',
       'policies' => array(
         array(
-          'title' => '국민기초생활보장제, 부양의무제 폐지로 빈곤 사각지대 해소',
+          'title' => '국민기초생활보장제, <a href="http://blog.naver.com/713sim/220955608685">부양의무제 폐지</a>로 빈곤 사각지대 해소',
           'link' => 'http://minsim.or.kr',
         ),
         array(
