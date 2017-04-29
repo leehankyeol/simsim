@@ -276,3 +276,9 @@ a.back {
     padding-left: 20px;
   }
 }
+
+@media (max-width: 320px) {
+  ul.choices li div.caption {
+    font-size: 0.7em;
+  }
+}
