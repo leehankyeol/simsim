@@ -10,7 +10,11 @@
   }
 
   $db = new MysqliDb(array(
-    
+    'host' => 'host',
+    'username' => 'username',
+    'password' => 'password',
+    'db' => 'db',
+    'port' => 'port',
   ));
   $db->where('id', 2);
   $count = $db->getOne('simsim_counts');
